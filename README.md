@@ -1,10 +1,8 @@
 # Teste Frontend
 
-Leia primeiro todo o projeto, faça sua estimativa de horas para o desenvolvimento e envie um email com o
-título `[Teste Frontend] Estimativa` para lagden@textecnologia.com.br
+Leia primeiro todo o projeto, faça sua estimativa de horas para o desenvolvimento e envie um email com o título `[Teste Frontend] Estimativa` para rh@textecnologia.com.br
 
-Quando finalizar o teste, publique tudo no seu [Github](https://github.com) e envie um email com o
-título `[Teste Frontend] Finalizado` para lagden@textecnologia.com.br contendo o link do repositório do projeto
+Quando finalizar o teste, publique tudo no seu Github e envie um email com o título `[Teste Frontend] Finalizado` para rh@textecnologia.com.br contendo o link do repositório do projeto
 
 
 ## Missão
