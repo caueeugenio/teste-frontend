@@ -19,7 +19,7 @@ Desenvolver uma **UI (User Interface)** de acordo com o desenho que está na pas
 ### Especificação
 
 - Cross browser support (IE11+)
-- Consumir [API de veiculos](https://consulta-veiculos.nimble.com.br/v1)
+- Consumir [API de veiculos](https://github.com/TExTecnologia/teste-frontend#api)
 - Criar SPA que tenha...
     - Listagem de veículos
     - Detalhe do veículo
