@@ -30,15 +30,15 @@ Desenvolver uma **UI (User Interface)** de acordo com o desenho que está na pas
 
 Para desenvolver o **App**, você irá consumir os dados de uma API [GraphQL](http://graphql.org/)
 
-O endpoint para consumir a API é: https://api.nimble.com.br/veiculoQL/v1/gql
-E o esquema está na pasta [resources](https://github.com/TExTecnologia/teste-dev/blob/master/resources/schema.graphql)
+O endpoint para consumir a API é: https://api.nimble.com.br/veiculoQL/v1/gql  
+E o esquema está na pasta [resources](https://github.com/TExTecnologia/teste-frontend/blob/master/resources/schema.graphql)
 
 
 ### Dica
 
 Utilize o [GraphQL Playground](https://www.graphqlbin.com/new) para ajudar nos testes e desenvolvimento das `queries` e `mutation`
 
-![Graphql Playgraound](https://github.com/TExTecnologia/teste-dev/raw/master/resources/graphql-playgraound-1.png)
+![Graphql Playgraound](https://github.com/TExTecnologia/teste-dev/raw/master/resources/graphql-playgraound-1.png)  
 ![Graphql Playgraound](https://github.com/TExTecnologia/teste-dev/raw/master/resources/graphql-playgraound-2.png)
 
 
