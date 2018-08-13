@@ -32,7 +32,7 @@ E o esquema está na pasta [resources](https://github.com/TExTecnologia/teste-fr
 
 ### Ajuda
 
-Para ajudar, eu coloquei na pasta [resources](https://github.com/TExTecnologia/teste-frontend/blob/master/resources/query_mutation.graphql) todas as queries e mutations necessárias para o desenvolvimento
+Para ajudar, eu coloquei na pasta [resources](https://github.com/TExTecnologia/teste-frontend/blob/master/resources/query_mutation.graphql) todas as `queries` e `mutations` necessárias para o desenvolvimento
 
 
 ### Dica
