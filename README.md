@@ -6,8 +6,7 @@ Faça uma estimativa de horas para o desenvolvimento e envie um email com o tít
 
 Quando finalizar o teste, publique tudo no seu [Github](https://github.com) e envie um email com o título `[Teste Frontend] Finalizado` para rh@textecnologia.com.br
 
-**Atenção:**
-
+**Atenção:**  
 Coloque no `README.md` do seu projeto todas as informações para conseguirmos executá-lo
 
 
