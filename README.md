@@ -1,6 +1,6 @@
 # Teste Frontend
 
-Leia primeiro todo o projeto...
+Leia primeiro todo o projeto.
 
 Faça uma estimativa de horas para o desenvolvimento e envie um email com o título `[Teste Frontend] Estimativa` para rh@textecnologia.com.br
 
@@ -18,7 +18,6 @@ Desenvolver uma **UI (User Interface)** de acordo com o desenho que está na pas
 
 ### Especificação
 
-- Cross browser support (IE11+)
 - Consumir [API de veiculos](https://github.com/TExTecnologia/teste-frontend#api)
 - Criar SPA que tenha...
     - Listagem de veículos
