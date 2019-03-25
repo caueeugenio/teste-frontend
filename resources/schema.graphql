@@ -55,7 +55,8 @@ type Veiculo implements Node {
   ano_modelo: Int
   combustivel: CombustivelType
   cor: String
-  usado: Boolean
+  vendido: Boolean
+  descricao: String
 }
 
 input VeiculoInput {
@@ -65,12 +66,13 @@ input VeiculoInput {
   ano_modelo: Int
   combustivel: CombustivelType
   cor: String
-  usado: Boolean
+  vendido: Boolean
+  descricao: String
 }
 
 type Mutation {
   createVeiculo(data: VeiculoInput!): ID
-  updateVeiculo(data: JSON!, id: ID!): ID
+  updateVeiculo(data: VeiculoInput!, id: ID!): ID
   deleteVeiculo(id: ID!): ID
 }
 
