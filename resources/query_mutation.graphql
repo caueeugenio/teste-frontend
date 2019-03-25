@@ -1,4 +1,3 @@
-# Listagem + Busca
 query BuscaVeiculo($page: Int, $limit: Int, $query: String) {
   buscaVeiculo(page: $page, limit: $limit, query: $query) {
     pageInfo {
@@ -19,30 +18,25 @@ query BuscaVeiculo($page: Int, $limit: Int, $query: String) {
   }
 }
 
-# Detalhe
 query Veiculo($id: ID!) {
   veiculo(id: $id) {
     _id
     marca
     modelo
-    combustivel
-    cor
     ano_modelo
-    ano_fabricacao
+    vendido
+    descricao
   }
 }
 
-# Add um novo veículo
 mutation CreateVeiculo($data: VeiculoInput!) {
   createVeiculo(data: $data)
 }
 
-# Atualiza os dados do veículo
-mutation UpdateVeiculo($data: JSON!, $id: ID!) {
+mutation UpdateVeiculo($data: VeiculoInput!, $id: ID!) {
   updateVeiculo(data: $data, id: $id)
 }
 
-# Remove um veículo
 mutation DeleteVeiculo($id: ID!) {
   deleteVeiculo(id: $id)
 }
