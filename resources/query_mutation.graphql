@@ -1,42 +1,33 @@
-query BuscaVeiculo($page: Int, $limit: Int, $query: String) {
-  buscaVeiculo(page: $page, limit: $limit, query: $query) {
-    pageInfo {
-      hasPreviousPage
-      hasNextPage
-      pages
-      page
-    }
-    total
-    edges {
-      node {
-        _id
-        marca
-        modelo
-        combustivel
-      }
-    }
-  }
+query Busca($previous: String, $next: String, $query: JSON, $limit: Int, $type: ResultType!) {
+	search(previous: $previous, next: $next, query: $query, limit: $limit, type: $type) {
+		results {
+			... on Veiculo {
+				_id
+				marca
+				modelo
+				descricao
+			}
+		}
+		hasNext
+		next
+		hasPrevious
+		previous
+	}
 }
 
-query Veiculo($id: ID!) {
-  veiculo(id: $id) {
-    _id
-    marca
-    modelo
-    ano_modelo
-    vendido
-    descricao
-  }
+query Detalhes($id: ID!) {
+	details(id: $id) {
+		_id
+		marca
+		modelo
+		descricao
+	}
 }
 
-mutation CreateVeiculo($data: VeiculoInput!) {
-  createVeiculo(data: $data)
+mutation Salva($data: VeiculoInput!, $id: ID) {
+	save(data: $data, id: $id)
 }
 
-mutation UpdateVeiculo($data: VeiculoInput!, $id: ID!) {
-  updateVeiculo(data: $data, id: $id)
-}
-
-mutation DeleteVeiculo($id: ID!) {
-  deleteVeiculo(id: $id)
+mutation Apaga($id: ID!) {
+	rm(id: $id)
 }
