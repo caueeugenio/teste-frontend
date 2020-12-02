@@ -1,3 +1,8 @@
+scalar JSON
+
+"""
+Marcas
+"""
 enum MarcaType {
   FIAT
   GM
@@ -15,6 +20,9 @@ enum MarcaType {
   SUZUKI
 }
 
+"""
+Combustível
+"""
 enum CombustivelType {
   FLEX
   ALCOOL
@@ -26,21 +34,24 @@ enum CombustivelType {
   HIBRIDO
 }
 
-type PageInfo {
-  hasPreviousPage: Boolean!
-  hasNextPage: Boolean!
-  pages: Int
-  page: Int
+"""
+Helper Paginação
+"""
+enum ResultType {
+  VEICULO
 }
 
-type SearchResultItemEdge {
-  node: Veiculo
-}
+"""
+Itens que podem aparecer no resultado da busca.
+"""
+union ResultItem = Veiculo
 
-type SearchResultItemConnection {
-  total: Int!
-  edges: [SearchResultItemEdge]
-  pageInfo: PageInfo
+type SearchResultItem {
+  results: [ResultItem]
+  next: String
+  hasNext: Boolean!
+  hasPrevious: Boolean!
+  previous: String
 }
 
 interface Node {
@@ -57,6 +68,8 @@ type Veiculo implements Node {
   cor: String
   vendido: Boolean
   descricao: String
+  created: Float
+  modified: Float
 }
 
 input VeiculoInput {
@@ -71,14 +84,22 @@ input VeiculoInput {
 }
 
 type Mutation {
-  createVeiculo(data: VeiculoInput!): ID
-  updateVeiculo(data: VeiculoInput!, id: ID!): ID
-  deleteVeiculo(id: ID!): ID
+  save(
+    data: VeiculoInput!
+    id: ID
+  ): ID
+  rm(id: ID!): ID
 }
 
 type Query {
-  veiculo(id: ID!): Veiculo
-  buscaVeiculo(page: Int, limit: Int, query: String, type: String): SearchResultItemConnection
+  details(id: ID!): Veiculo
+  search(
+    previous: String,
+    next: String,
+    query: JSON,
+    limit: Int = 10,
+    type: ResultType!
+  ): SearchResultItem
 }
 
 schema {
