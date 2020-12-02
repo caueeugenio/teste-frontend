@@ -19,28 +19,32 @@ Desenvolver uma **UI (User Interface)** de acordo com o desenho que está na pas
 
 - Consumir [API de veiculos](https://github.com/TExTecnologia/teste-frontend#api)
 - Criar SPA que tenha...
-    - Listagem de veículos
+    - Busca/Listagem de veículos
     - Detalhe do veículo
-    - Busca
-    - Formulário de novo/edição de veículos
+    - Formulário de edição de veículos
+
 
 ### API
 
-Para desenvolver o **App**, você irá consumir os dados de uma API [GraphQL](http://graphql.org/)  
-O endpoint para consumir a API é: https://api.nimble.com.br/veiculoQL/v1/gql  
+Para desenvolver o **App**, você consumirá os dados de uma API [GraphQL](http://graphql.org/)  
+O endpoint da API é: https://service.teleport.com.br/teste-veiculo/v1/gql  
 E o esquema está na pasta [resources](https://github.com/TExTecnologia/teste-frontend/blob/master/resources/schema.graphql)
 
-### Ajuda
 
-Para ajudar, eu coloquei na pasta [resources](https://github.com/TExTecnologia/teste-frontend/blob/master/resources/query_mutation.graphql) todas as `queries` e `mutations` necessárias para o desenvolvimento
+### Exemplo
+
+Temos alguns exemplos:
+
+- [simples](https://codepen.io/lagden/pen/yLBOYjL)
+- [avançado](https://svelte.dev/repl/6647e0d7290c4f849d828706a65c2b5b?version=3.30.1)
 
 
 ### Dica
 
-Utilize o [GraphQL Playground](https://www.graphqlbin.com/new) para ajudar nos testes e desenvolvimento das `queries` e `mutation`
+Utilize o [GraphQL Playground](https://legacy.graphqlbin.com/new) para ajudar nos testes e desenvolvimento.  
+Na pasta [resources](https://github.com/TExTecnologia/teste-frontend/blob/master/resources/query_mutation.graphql) tem todas as `queries` e `mutations` necessárias.
 
-![Graphql Playgraound](https://github.com/TExTecnologia/teste-dev/raw/master/resources/graphql-playgraound-1.png)
-![Graphql Playgraound](https://github.com/TExTecnologia/teste-dev/raw/master/resources/graphql-playgraound-2.png)
+![Graphql Playgraound](https://user-images.githubusercontent.com/130963/100883726-6d151d00-348f-11eb-9bcc-126fd8f03bc2.png)
 
 
 ## Dúvida
