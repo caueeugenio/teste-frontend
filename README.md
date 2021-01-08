@@ -4,7 +4,7 @@
 
 Para executar o projeto você pode clona-lo através do comando:
 ```
-git clone https://github.com/caueeugenio/sort-orders.git
+git clone https://github.com/caueeugenio/teste-frontend.git
 ```
 
 ou acessa-lo diretamente pelo link: 
