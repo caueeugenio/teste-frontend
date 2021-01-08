@@ -2,11 +2,13 @@
 
 ## Para executar
 
-```
 Para executar o projeto você pode clona-lo através do comando:
+```
 git clone https://github.com/caueeugenio/sort-orders.git
+```
 
 ou acessa-lo diretamente pelo link: 
+```
 https://caueeugenio.github.io/teste-frontend/
 ```
 
