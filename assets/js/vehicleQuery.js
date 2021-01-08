@@ -56,9 +56,9 @@ fetch('https://service.teleport.com.br/teste-veiculo/v1/gql', {
 			return `
 			
 			<tbody>
-				<tr onclick='getInfoCar("Marca: ${veiculo.marca}<br>Modelo: ${veiculo.modelo}<br>Ano Fabricação: ${veiculo.ano_modelo}<br>Ano Modelo: ${veiculo.ano_fabricacao}");' class="  changeCursor">
+				<tr onclick='getInfoCar("Marca: ${veiculo.marca}<br>Modelo: ${veiculo.modelo}<br>Ano Fabricação: ${veiculo.ano_modelo}<br>Ano Modelo: ${veiculo.ano_fabricacao}");' class="  changeCursor ">
 
-					<td class="p-2 card-text">${veiculo.modelo}</td>
+					<td class="p-2 card-text ">${veiculo.modelo}</td>
 					<td class="p-2 card-text">${veiculo.marca}</td>
 					<td class="p-2 card-text">${veiculo.ano_modelo}</td>	
 					<td class="p-2 card-text"><hr></td>	
@@ -99,7 +99,6 @@ function getInfoCar(vehicle_info) {
 	let easterEgg1 = document.querySelector(".easterEgg1");
 	let easterEgg2 = document.querySelector(".easterEgg2");
 	vehicle.innerHTML = vehicle_info;
-
 	easterEgg1.removeAttribute("hidden");
 	easterEgg2.removeAttribute("hidden");
 
@@ -129,6 +128,6 @@ function SecondEasterEgg() {
 	alert("Sou muito dedicado, sei que se me derem uma chance posso evoluir e surpreender :)");
 }
 
-function bestCompany(){
+function bestCompany() {
 	alert("Melhor empresa! :D");
 }

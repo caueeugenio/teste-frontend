@@ -8,6 +8,14 @@
     width: 105.5%;
     border: none;
 }
+.detail-text{
+    color:hsl(215, 95%, 83%);
+}
+tr{
+    background-color: white;
+
+}
+
 
 .card-style {
     display: flex;
