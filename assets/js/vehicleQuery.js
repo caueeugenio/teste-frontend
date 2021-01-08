@@ -41,7 +41,7 @@ fetch('https://service.teleport.com.br/teste-veiculo/v1/gql', {
 	})
 })
 
-	//tratamento da consulta
+	//Tratamento da consulta
 	.then(response => {
 		if (!response.ok) {
 			throw Error("ERROR");
@@ -85,7 +85,7 @@ fetch('https://service.teleport.com.br/teste-veiculo/v1/gql', {
 	});
 
 
-
+//Função responsavel pela pesquisa dos carros
 function search() {
 	var filter = document.getElementById('filter-vehicle');
 	var table = document.getElementById('list');
