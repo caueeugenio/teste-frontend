@@ -18,15 +18,14 @@
 
                 <div class="d-flex bd-highlight">
                     <div class="p-2 flex-grow-1 bd-highlight">
-                        <figure class="pt-3 changeCursor">
-                            <img onclick="bestCompany();" src="layout/icons/logo.svg" width="100px" alt="logo-TEx"
-                                srcset="">
+                        <figure class="pt-3">
+                            <img src="layout/icons/logo.svg" width="100px" alt="logo-TEx" srcset="">
                         </figure>
                     </div>
                     <div class="p-3 flex-grow-1 bd-highlight">
                         <div class="search-field pt-3">
-                            <input class="input-search-style" id="filter-vehicle" type="text"
-                                placeholder="🔍 Pesquise um veículo ... (digite com letra minúscula)">
+                            <input class="form-control search-style" id="filter-vehicle" type="text"
+                                placeholder="Pesquise um veículo ... 🔍">
                         </div>
                     </div>
 
@@ -40,17 +39,20 @@
     <main>
         <section class="principal-content container">
 
-            <div class="add-vehicle pt-5">
-                <input disabled type="text" class=" form-control input-add-style"
-                    placeholder="Adicione um veículo..."><img onclick="unavailableFunction();"
-                    class="img-add-style changeCursor" src="layout/icons/add.svg" width="35px"
-                    alt="botao de adicionar veiculos" srcset="">
-            </div>
+            <!-- <div class="add-vehicle p-5 ">
+                <input disabled  class="form-control" id="editAddVehicle" type="text" style="width:80%"
+                    placeholder="Adicione um veículo...">
 
+                    <button>
+                        <img id="add-button" width="35px" src="teste-frontend/layout/icons/add.svg">
+                    </button>
+            </div> -->
 
-            <div class="row">
-                <div class="col">
-                    <p class="text-center pt-4">Lista de veículos</p>
+            <h3 class="p-4 text-center">Lista de veículos</h3>
+
+            <div class="container">
+
+                <div class="row">
 
                     <div class="col">
                         <table id="list" class=" container">
@@ -63,24 +65,14 @@
                             </thead>
                         </table>
                     </div>
-                </div>
-                <div class="col detalhes-info">
 
-                    <p class="text-center pt-4">Detalhes</p>
-
-                    <div class="col">
-                        <h3 class="text-center" id="info-car"></h3>
-
-                        <div class="showEasterEgg " style="display: flex; justify-content: space-between;">
-                            <a onclick="FirstEasterEgg();"><img hidden class="flash easterEgg1 changeCursor"
-                                    width="52px" src="layout/icons/easter-egg1.png" alt="easter egg 01"></a>
-
-                            <a onclick="SecondEasterEgg();"><img hidden class="flash easterEgg2 changeCursor"
-                                    width="52px" src="layout/icons/easter-egg2.png" alt="easter egg 02"></a>
-                        </div>
-                    </div>
+                    <a onclick="FirstEasterEgg();"><img class="flash easterEgg" width="52px"
+                            src="layout/icons/easter-egg1.png" alt="easter egg 01"></a>
 
                 </div>
+
+                <a onclick="SecondEasterEgg();"><img class="flash easterEgg" width="52px"
+                        src="layout/icons/easter-egg2.png" alt="easter egg 02"></a>
             </div>
 
         </section>

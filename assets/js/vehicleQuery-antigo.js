@@ -42,7 +42,6 @@ fetch('https://service.teleport.com.br/teste-veiculo/v1/gql', {
 })
 
 	//Tratamento da consulta
-
 	.then(response => {
 		if (!response.ok) {
 			throw Error("ERROR");
@@ -52,24 +51,23 @@ fetch('https://service.teleport.com.br/teste-veiculo/v1/gql', {
 
 
 	.then(data => {
+
 		const html = data.data.search.results.map(veiculo => {
+
 			return `
-			
-			<tbody>
-				<tr onclick='getInfoCar("Marca: ${veiculo.marca}<br>Modelo: ${veiculo.modelo}<br>Ano Fabricação: ${veiculo.ano_modelo}<br>Ano Modelo: ${veiculo.ano_fabricacao}");' class="  changeCursor">
+				<tbody>
+				<tr class="card ">
 
 					<td class="p-2 card-text">${veiculo.modelo}</td>
 					<td class="p-2 card-text">${veiculo.marca}</td>
 					<td class="p-2 card-text">${veiculo.ano_modelo}</td>	
 					<td class="p-2 card-text"><hr></td>	
-					<td class=" card-text text-center pb-4"> <a ><img class="style-img-tag" src="layout/icons/tag.svg" width="20px" onclick='unavailableFunction("${veiculo.descricao}");' alt="botão de tag"
-					srcset=""></a></td>	
-
+					<td class=" card-text text-center pb-4">Descrição: ${veiculo.descricao}</td>	
+				
 				</tr>
 				
 				<br>  
 				</tbody>  
-	
 			`;
 
 		})
@@ -82,34 +80,14 @@ fetch('https://service.teleport.com.br/teste-veiculo/v1/gql', {
 		search();
 
 
-
 	}).catch(error => {
 		console.log(error);
 	});
-
-//Função responsável por retornar o alerta de função indisponível
-function unavailableFunction() {
-	alert("Função indisponível :/");
-}
-
-//Função responsável por pegar os dados do veículo
-function getInfoCar(vehicle_info) {
-
-	let vehicle = document.querySelector("#info-car");
-	let easterEgg1 = document.querySelector(".easterEgg1");
-	let easterEgg2 = document.querySelector(".easterEgg2");
-	vehicle.innerHTML = vehicle_info;
-
-	easterEgg1.removeAttribute("hidden");
-	easterEgg2.removeAttribute("hidden");
-
-}
 
 
 //Função responsavel pela pesquisa dos carros
 function search() {
 	var filter = document.getElementById('filter-vehicle');
-
 	var table = document.getElementById('list');
 	filter.onkeyup = function () {
 		var nameFilter = filter.value;
@@ -121,14 +99,11 @@ function search() {
 	};
 }
 
-//Funções adicionais//
+
+
 function FirstEasterEgg() {
-	alert("Apesar de não ter conseguido implementar todo o desafio proposto... (clique no próximo Easter Egg)");
+	alert("Apesar de não ter conseguido implementar todo o desafio proposto... (encontre o próximo easter egg na página)");
 }
 function SecondEasterEgg() {
 	alert("Sou muito dedicado, sei que se me derem uma chance posso evoluir e surpreender :)");
-}
-
-function bestCompany(){
-	alert("Melhor empresa! :D");
 }
