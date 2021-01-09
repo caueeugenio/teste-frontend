@@ -16,7 +16,13 @@ https://caueeugenio.github.io/teste-frontend/
 
 Faça consulta de veículos através da barra de pesquisa, adicione novos carros e encontre easter eggs perdidos dentro da página.
 
+### Observações
 
+Para adicionar veículos siga o seguinte formato de inserção: MODELO MARCA ANO_FAB ANO_MOD
+
+Exemplo:```HB20 HONDA 2020 2032```
+
+*Não esqueça de colocar apenas 1(um) espaço entre os itens.
 
 
 
