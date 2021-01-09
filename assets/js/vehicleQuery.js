@@ -104,7 +104,39 @@ function getInfoCar(vehicle_info) {
 
 }
 
+//Função responsável por adicionar novos veículos
+function add() {
+	let inputValor = document.querySelector(".input-add-style").value;
+	let myString = inputValor;
+	let splits = myString.split(' ', 4);
+	let conteudoHTML = `
+	<tbody>
+	<tr onclick='getInfoCar("Marca: ${splits[1]}<br>Modelo: ${splits[0]}<br>Ano Fabricação: ${splits[2]}<br>Ano Modelo: ${splits[3]}");' class="  changeCursor ">
 
+					<td class="p-2 card-text ">${splits[0]}</td>
+					<td class="p-2 card-text">${splits[1]}</td>
+					<td class="p-2 card-text">${splits[2]}</td>	
+					<td class="p-2 card-text"><hr></td>	
+					<td class=" card-text text-center pb-4"> <a ><img class="style-img-tag" src="layout/icons/tag.svg" width="20px" onclick='unavailableFunction("${inputValor}");' alt="botão de tag"
+					srcset=""></a></td>	
+
+				</tr>
+				
+		
+				</tbody>  
+	<br>
+	`
+
+	if (inputValor != "" && splits.length == 4) {
+		document.querySelector("table").insertAdjacentHTML("afterbegin", conteudoHTML)
+			;
+
+	} else {
+		alert("[ATENÇÃO] Você não preencheu corretamente os dados.\n\nO modelo de preeenchimento é:\nMODELO MARCA ANO_FABRICACAO ANO_MODELO\n\nExemplo: HB20 HONDA 2019 2020");
+
+	}
+
+}
 //Função responsavel pela pesquisa dos carros
 function search() {
 	var filter = document.getElementById('filter-vehicle');
@@ -131,3 +163,4 @@ function SecondEasterEgg() {
 function bestCompany() {
 	alert("Melhor empresa! :D");
 }
+
