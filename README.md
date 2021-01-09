@@ -18,11 +18,15 @@ Faça consulta de veículos através da barra de pesquisa, adicione novos carros
 
 ### Observações
 
-Para adicionar veículos siga o seguinte formato de inserção: MODELO MARCA ANO_FAB ANO_MOD
+-> Para adicionar veículos siga o seguinte formato de inserção: MODELO MARCA ANO_FAB ANO_MOD
 
 Exemplo:```HB20 HONDA 2020 2032```
 
 *Não esqueça de colocar apenas 1(um) espaço entre os itens.
+
+-> Para pesquisa um veículo digite o mesmo em letra minúscula, dessa forma:
+
+Exemplo: ```hb20```
 
 
 
