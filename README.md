@@ -14,7 +14,7 @@ https://caueeugenio.github.io/teste-frontend/
 
 ### Funções
 
-Faça consulta de veículos através da barra de pesquisa e encontre easter eggs perdidos dentro da página.
+Faça consulta de veículos através da barra de pesquisa, adicione novos carros e encontre easter eggs perdidos dentro da página.
 
 
 
